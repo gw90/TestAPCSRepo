@@ -53,10 +53,10 @@ public class Demo{
     public static void main(String []args){
 	if(args.length>0) printLoop(Integer.parseInt(args[0]));
 	else printLoop(5);
-	int[][] a = {{},{1,2},{1,2,3}};
+	/*int[][] a = {{},{1,2},{1,2,3}};
 	System.out.println(arrayDeepToString(a).replace("}, ","},\n "));
 	System.out.println(arrayDeepToString(create2DArray(5,4,4)));
 	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));
-	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));
+	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));*/
     }
 }
