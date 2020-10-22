@@ -43,16 +43,20 @@ public class Demo{
     }
 
     public static int[][] create2DArrayRandomized(int rows, int maxCols, int maxValue){
-	return create2DArray(rows, rand(maxCols), maxValue);
+	int[][] out = new int[rows][0];
+	for(int i = 0; i<rows; i++){
+	    out[i] = create2DArray(1, rand(maxCols), maxValue)[0];
+	}
+	return out;
     }    
     
     public static void main(String []args){
 	if(args.length>0) printLoop(Integer.parseInt(args[0]));
 	else printLoop(5);
 	int[][] a = {{},{1,2},{1,2,3}};
-	/*System.out.println(arrayDeepToString(a).replace("}, ","},\n "));
+	System.out.println(arrayDeepToString(a).replace("}, ","},\n "));
 	System.out.println(arrayDeepToString(create2DArray(5,4,4)));
 	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));
-	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));*/
+	System.out.println(arrayDeepToString(create2DArrayRandomized(5,4,4)));
     }
 }
